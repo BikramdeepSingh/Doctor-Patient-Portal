@@ -34,6 +34,8 @@ Run the project using Eclipse IDE
 - In MySql workbench run the queries listed in the MySQL-queries folder by copying them in query window of MySQL Workbench.
 - Run MainPage.java.
 
+**Note: Don't forget to mention your url, username and password while connecting to database wherever required in the project.**
+
 ## Lessons Learned
 
 - I learned the development of a application using swing java.
