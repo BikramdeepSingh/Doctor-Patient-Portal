@@ -9,10 +9,15 @@ Doctor-Patient-Portal is a windows application made using swing java as front-en
 ## Screenshots
 
 - Main Window
+
   ![App Screenshot](https://github.com/BikramdeepSingh/Doctor-Patient-Portal/blob/master/media/Main%20page.jpg?raw=true)
+  
 - Signup Window
+
   ![App Screenshot](https://github.com/BikramdeepSingh/Doctor-Patient-Portal/blob/master/media/SignUp.jpg?raw=true)
+  
 - Login Window
+
   ![App Screenshot](https://github.com/BikramdeepSingh/Doctor-Patient-Portal/blob/master/media/Login.jpg?raw=true)
 
 ## Installation
@@ -28,6 +33,8 @@ Run the project using Eclipse IDE
 - Add mysql-connector-java, rs2xml and jcalendar jar file to the project.
 - In MySql workbench run the queries listed in the MySQL-queries folder by copying them in query window of MySQL Workbench.
 - Run MainPage.java.
+
+**Note: Don't forget to mention your url, username and password while connecting to database wherever required in the project.**
 
 ## Lessons Learned
 
