@@ -1,0 +1,74 @@
+1. CREATE DATABASE `doctorpatientportal` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+    USE doctorpatientportal;
+
+2. CREATE TABLE `adminlogin` (
+  `UserName` varchar(25) NOT NULL,
+  `pass` varchar(15) NOT NULL,
+   PRIMARY KEY (`UserName`),
+   UNIQUE KEY `UserName_UNIQUE` (`UserName`)
+   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+3. CREATE TABLE `appointment` (
+  `AppointmentID` int(11) NOT NULL AUTO_INCREMENT,
+  `Category` varchar(45) NOT NULL,
+  `Date` date NOT NULL,
+  `Time` varchar(45) NOT NULL,
+  `PatientName` varchar(45) NOT NULL,
+  `UserName` varchar(45) NOT NULL,
+  `DoctorName` varchar(45) NOT NULL,
+  PRIMARY KEY (`AppointmentID`),
+  UNIQUE KEY `AppointmentID_UNIQUE` (`AppointmentID`)
+  ) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+4. CREATE TABLE `availability` (
+  `DoctorName` varchar(45) NOT NULL,
+  `Date` varchar(45) NOT NULL,
+  `Time` varchar(45) NOT NULL
+   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+5. CREATE TABLE `doctorlogin` (
+  `username` varchar(25) NOT NULL,
+  `doctorid` int(11) NOT NULL,
+  `Name` varchar(25) NOT NULL,
+  `categorie` varchar(20) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `password` varchar(25) NOT NULL,
+  PRIMARY KEY (`doctorid`),
+  UNIQUE KEY `username_UNIQUE` (`username`),
+  UNIQUE KEY `doctorid_UNIQUE` (`doctorid`)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+6. CREATE TABLE `organdetail` (
+  `Name` varchar(30) NOT NULL,
+  `Age` varchar(5) NOT NULL,
+  `PhoneNumber` varchar(15) NOT NULL,
+  `BloodGroup` varchar(5) NOT NULL,
+  `Organ` varchar(15) NOT NULL,
+  `WhenToDonate` varchar(20) NOT NULL,
+  `InformerId` varchar(25) NOT NULL
+   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+7. CREATE TABLE `patientlogin` (
+  `userName` varchar(20) NOT NULL,
+  `Name` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `mobileNumber` varchar(15) NOT NULL,
+  `Age` varchar(5) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `TreatmentFor` varchar(25) DEFAULT NULL,
+  `Description` varchar(100) DEFAULT NULL,
+  `Feedback` varchar(200) DEFAULT NULL,
+   PRIMARY KEY (`userName`),
+   UNIQUE KEY `userName_UNIQUE` (`userName`)
+   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+
+
+
+
+
+
+
+
